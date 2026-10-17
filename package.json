@@ -1,0 +1,16 @@
+{
+  "name": "linkearn-referral-management",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mobile-first referral and affiliate program management MVP built with the MERN stack.",
+  "scripts": {
+    "dev": "concurrently -n API,WEB -c blue,green \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "dev:api": "npm run dev --prefix backend",
+    "dev:web": "npm run dev --prefix frontend",
+    "seed": "npm run seed --prefix backend",
+    "build": "npm run build --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
